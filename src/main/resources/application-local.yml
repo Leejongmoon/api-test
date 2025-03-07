@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  datasource:
+    url: jdbc:oracle:thin:@192.168.0.66:1522:ORCL2
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: NIER_RPMS
+    password: NIER_RPMS
+
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      connection-timeout: 30000
